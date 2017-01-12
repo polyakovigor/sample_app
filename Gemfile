@@ -16,6 +16,8 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
+#gem 'libnotify', '0.8.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
 
