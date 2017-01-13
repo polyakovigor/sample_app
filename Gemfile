@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+gem 'bootstrap-sass', '2.3.2.0'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -19,7 +20,7 @@ end
 #gem 'libnotify', '0.8.0'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '4.0.1'
+gem 'sass-rails', '4.0.3'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
