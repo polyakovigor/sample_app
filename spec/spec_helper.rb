@@ -41,4 +41,9 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.include Capybara::DSL
+
+  # Disable the old-style object.should syntax.
+  config.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
 end

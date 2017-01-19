@@ -19,6 +19,8 @@ group :test do
   gem 'capybara'
   gem 'minitest'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 #gem 'libnotify', '0.8.0'
@@ -39,7 +41,7 @@ gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks', '1.1.1'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
