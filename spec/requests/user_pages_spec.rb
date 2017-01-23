@@ -4,6 +4,26 @@ describe "User pages" do
 
   subject { page }
 
+  describe "index" do
+
+    before do
+      sign_in FactoryGirl.create(:user)
+      FactoryGirl.create(:user, name: "Bob", email: "bob@example.com")
+      FactoryGirl.create(:user, name: "Ben", email: "ben@example.com")
+      visit users_path
+    end
+
+    it { should have_title('All users') }
+  end
+
+  describe "pagination" do
+
+    before(:all) { 30.times { FactoryGirl.create(:user) } }
+    after(:all)  { User.delete_all }
+
+
+  end
+
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
     before { visit user_path(user) }
